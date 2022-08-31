@@ -1,10 +1,14 @@
 import "./header.scss";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
+
 export function Header() {
   return (
     <header className="header">
       <a className="header__top" href="/">
         <div className="header__top__brand">Startaê</div>
+        {<FontAwesomeIcon icon={faEye} />}
       </a>
 
       <div className="header__main">

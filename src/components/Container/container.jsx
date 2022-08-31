@@ -12,7 +12,7 @@ const people = [
   },
   {
     name: "Vitu Bicha",
-    picture: "",
+    picture: "https://picsum.photos/200/300",
     social: "@bicharrara",
     role: "Senior Dev",
     quote:
@@ -20,7 +20,7 @@ const people = [
   },
   {
     name: "Rafael Torales",
-    picture: "",
+    picture: "https://picsum.photos/200/300",
     social: "@rafaeltorales",
     role: "Designer",
     quote:
@@ -28,7 +28,7 @@ const people = [
   },
   {
     name: "Rafael Torales",
-    picture: "",
+    picture: "https://picsum.photos/200/300",
     social: "@rafaeltorales",
     role: "Designer",
     quote:
@@ -36,7 +36,7 @@ const people = [
   },
   {
     name: "Rafael Torales",
-    picture: "",
+    picture: "https://picsum.photos/200/300",
     social: "@rafaeltorales",
     role: "Designer",
     quote:
@@ -44,7 +44,7 @@ const people = [
   },
   {
     name: "Rafael Torales",
-    picture: "",
+    picture: "https://picsum.photos/200/300",
     social: "@rafaeltorales",
     role: "Designer",
     quote:
@@ -52,7 +52,7 @@ const people = [
   },
   {
     name: "Rafael Torales",
-    picture: "",
+    picture: "https://picsum.photos/200/300",
     social: "@rafaeltorales",
     role: "Designer",
     quote:
@@ -60,7 +60,7 @@ const people = [
   },
   {
     name: "Rafael Torales",
-    picture: "",
+    picture: "https://picsum.photos/200/300",
     social: "@rafaeltorales",
     role: "Designer",
     quote:
@@ -68,7 +68,7 @@ const people = [
   },
   {
     name: "Rafael Torales",
-    picture: "",
+    picture: "https://picsum.photos/200/300",
     social: "@rafaeltorales",
     role: "Designer",
     quote:
@@ -76,7 +76,7 @@ const people = [
   },
   {
     name: "Rafael Torales",
-    picture: "",
+    picture: "https://picsum.photos/200/300",
     social: "@rafaeltorales",
     role: "Designer",
     quote:
@@ -89,22 +89,15 @@ export function Container() {
     <main class="main-content">
       <div class="diagonal"></div>
       <div class="cards">
-        <Card
-          name={people[0].name}
-          social={people[0].social}
-          role={people[0].role}
-          picture={people[0].picture}
-          quote={people[0].quote}
-        />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {people.map((card) => (
+          <Card
+            name={card.name}
+            social={card.social}
+            role={card.role}
+            picture={card.picture}
+            quote={card.quote}
+          />
+        ))}
       </div>
     </main>
   );
