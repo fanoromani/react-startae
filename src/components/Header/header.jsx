@@ -8,7 +8,7 @@ export function Header() {
     <header className="header">
       <a className="header__top" href="/">
         <div className="header__top__brand">Startaê</div>
-        {<FontAwesomeIcon icon={faEye} />}
+        <FontAwesomeIcon icon={faEye} />
       </a>
 
       <div className="header__main">

@@ -1,7 +1,6 @@
-import "./card.scss";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import "./card.scss";
 
 export function Card({ name, social, role, picture, quote }) {
   return (
